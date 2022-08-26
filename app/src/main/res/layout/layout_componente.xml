@@ -50,17 +50,27 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:counterMaxLength="100"
             app:endIconMode="password_toggle"
             app:startIconContentDescription="Insira sua senha"
-            app:startIconDrawable="@drawable/ic_baseline_email">
+            app:startIconDrawable="@drawable/ic_baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                app:counterMaxLength="100"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            app:icon="@drawable/ic_baseline_lock"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            />
 
     </LinearLayout>
 
